@@ -8,7 +8,7 @@ const config: Config.InitialOptions = {
   transform: {
     '\\.[jt]sx?$': 'babel-jest',
   },
-  transformIgnorePatterns: ['/node_modules/(?!@lavka)'],
+  transformIgnorePatterns: ['/node_modules/(?!@my-pkg)'],
   verbose: true,
   testTimeout: 10000,
   maxWorkers: 7,
@@ -16,10 +16,10 @@ const config: Config.InitialOptions = {
 
 process.env = Object.assign(process.env, {
   ROOT_DIR: resolvePath(__dirname, '..'),
-  CLOWNDUCTOR_TOKEN: 'clownductor-token',
-  ARCANUM_API_OAUTH_TOKEN: 'arcanum-token',
-  YAV_TOKEN: 'yav-token',
-  SANDBOX_TOKEN: 'sandbox-token',
+  A_TOKEN: 'a-token',
+  B_TOKEN: 'b-token',
+  C_TOKEN: 'c-token',
+  D_TOKEN: 'd-token',
   DAYS_TO_STALE: 5,
 })
 
